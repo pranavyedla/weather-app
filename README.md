@@ -1,12 +1,49 @@
-# React + Vite
+# Weather App (React.js)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and beautiful weather app built with React.js, fetching live weather data from a public weather API. Instantly check the current weather and forecast for any city worldwide.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Search weather by city name
+- Real-time weather details (temperature, condition, humidity, etc.)
+- Next-day or multi-day forecast (if supported by API)
+- Clean and responsive user interface
+- Error handling for invalid city names
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React.js
+- Axios (for API calls)
+- WeatherAPI.com (or your chosen weather API)
+- CSS
+
+## Live Demo
+
+👉 [weather-app-three-liard-21.vercel.app](https://weather-app-three-liard-21.vercel.app/)
+
+## Getting Started
+
+1. **Clone the repository**
+    ```sh
+    git clone https://github.com/pranavyedla/weather-app.git
+    cd weather-app
+    ```
+
+2. **Install dependencies**
+    ```sh
+    npm install
+    ```
+
+3. **API Key Setup**
+    - Register at [weatherapi.com](https://www.weatherapi.com/) or your chosen API provider.
+    - Create a `.env` file in the project root:
+        ```
+        VITE_WEATHER_API_KEY=your_api_key_here
+        ```
+    - (Or update `src/api.js` or the config file directly with your API key, as per your codebase.)
+
+4. **Run the app locally**
+    ```sh
+    npm run dev
+    ```
+    The app runs at `http://localhost:5173`
